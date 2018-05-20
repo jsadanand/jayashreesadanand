@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="juggling-trick">Back</a>
+    <form class="form" action="check-your-answers-page" method="post">
+  <fieldset>
+    <legend>
+      <h1 class="heading-large">Tell us how long it took to train
+      </h1>
+    </legend>
+<div>
+
+
+        <div class="multiple-choice">
+          <input id="radio-1" type="radio" name="howlong" value="2 or More Years" {{checked("howlong","2 or More Years")}}>
+          <label for="radio-1">2 or More Years</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="radio-2" type="radio" name="howlong" value="1 or 2" {{checked("howlong","1 or 2")}}>
+          <label for="radio-2">1 or 2</label>
+        </div>
+
+</div>
+</fieldset>
+
+        <!-- custom code -->
+
+<!-- custom code -->
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+        </form>
+
+
+    </div>
+  </div>
+</main>
+
+
+
+{% endblock %}
